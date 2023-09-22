@@ -20,3 +20,10 @@ Answer 15 :  WHERE companies.Date<"2000";
 SELECT companies.name 
 FROM companies INNER JOIN employees ON employees.Company=companies.name
 Answer 16 : WHERE employees.Role="Graphic Designer";
+
+
+Answer 18 : SELECT Name FROM STUDENTS WHERE Points=(SELECT max(points) FROM students);
+Answer 19 : SELECT avg ("Points") FROM students;
+Answer 20 : SELECT count(ID) FROM students WHERE Points="500";
+Answer 21 : SELECT name FROM students WHERE name like "%s%";
+Answer 22 : SELECT * FROM students ORDER BY Points DESC;
